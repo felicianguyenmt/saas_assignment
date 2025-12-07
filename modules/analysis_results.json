@@ -1,0 +1,411 @@
+{
+  "timestamp": "2025-12-07 10:58:43",
+  "dataset_info": {
+    "total_customers": 500,
+    "actual_churned": 110,
+    "actual_churn_rate": 22.0,
+    "predicted_churn": 5,
+    "predicted_churn_rate": 1.0
+  },
+  "model_performance": {
+    "Logistic Regression": {
+      "accuracy": 0.78,
+      "precision": 0.5,
+      "recall": 0.045454545454545456,
+      "f1": 0.08333333333333333,
+      "auc_roc": 0.5710955710955711
+    },
+    "Random Forest": {
+      "accuracy": 0.78,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc_roc": 0.5442890442890442
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.78,
+      "precision": 0.5,
+      "recall": 0.09090909090909091,
+      "f1": 0.15384615384615385,
+      "auc_roc": 0.49009324009324007
+    }
+  },
+  "best_model": "Logistic Regression",
+  "confusion_matrices": {
+    "Logistic Regression": {
+      "true_negatives": 77,
+      "false_positives": 1,
+      "false_negatives": 21,
+      "true_positives": 1
+    },
+    "Random Forest": {
+      "true_negatives": 78,
+      "false_positives": 0,
+      "false_negatives": 22,
+      "true_positives": 0
+    },
+    "Gradient Boosting": {
+      "true_negatives": 76,
+      "false_positives": 2,
+      "false_negatives": 20,
+      "true_positives": 2
+    }
+  },
+  "feature_importance": {
+    "Random Forest": [
+      {
+        "feature": "avg_error_rate",
+        "importance": 0.05084857494604397
+      },
+      {
+        "feature": "avg_arr",
+        "importance": 0.042740507259892195
+      },
+      {
+        "feature": "avg_first_response_time",
+        "importance": 0.041061764046863916
+      },
+      {
+        "feature": "avg_usage_duration",
+        "importance": 0.04049947765748394
+      },
+      {
+        "feature": "days_since_signup",
+        "importance": 0.04014071183407209
+      },
+      {
+        "feature": "beta_feature_engagement",
+        "importance": 0.04010389324971577
+      },
+      {
+        "feature": "avg_mrr",
+        "importance": 0.0393071933605721
+      },
+      {
+        "feature": "avg_seats",
+        "importance": 0.038480572119294634
+      },
+      {
+        "feature": "max_mrr",
+        "importance": 0.037456336875201404
+      },
+      {
+        "feature": "avg_resolution_time",
+        "importance": 0.03626047849650003
+      },
+      {
+        "feature": "avg_usage_count_per_sub",
+        "importance": 0.03449989470292449
+      },
+      {
+        "feature": "total_arr",
+        "importance": 0.034395819778814875
+      },
+      {
+        "feature": "total_usage_count",
+        "importance": 0.034051349315240495
+      },
+      {
+        "feature": "total_seats",
+        "importance": 0.03372462445296543
+      },
+      {
+        "feature": "total_usage_duration",
+        "importance": 0.032987515675532854
+      }
+    ],
+    "Gradient Boosting": [
+      {
+        "feature": "avg_error_rate",
+        "importance": 0.10646279208205349
+      },
+      {
+        "feature": "avg_first_response_time",
+        "importance": 0.07006117666792765
+      },
+      {
+        "feature": "avg_resolution_time",
+        "importance": 0.06869832964121557
+      },
+      {
+        "feature": "avg_usage_duration",
+        "importance": 0.05531189380672051
+      },
+      {
+        "feature": "total_usage_count",
+        "importance": 0.048242125107633
+      },
+      {
+        "feature": "beta_feature_engagement",
+        "importance": 0.047997959734777225
+      },
+      {
+        "feature": "total_seats",
+        "importance": 0.04713654569932971
+      },
+      {
+        "feature": "days_since_signup",
+        "importance": 0.043424954610469836
+      },
+      {
+        "feature": "avg_seats",
+        "importance": 0.036566601098806974
+      },
+      {
+        "feature": "total_refunds",
+        "importance": 0.032853557547358296
+      },
+      {
+        "feature": "avg_usage_count_per_sub",
+        "importance": 0.030061520396875426
+      },
+      {
+        "feature": "max_mrr",
+        "importance": 0.029266870464864522
+      },
+      {
+        "feature": "max_resolution_time",
+        "importance": 0.02859291180575155
+      },
+      {
+        "feature": "avg_mrr",
+        "importance": 0.02821547694889578
+      },
+      {
+        "feature": "avg_usage_events_per_sub",
+        "importance": 0.025341407277727074
+      }
+    ]
+  },
+  "risk_segmentation": {
+    "High": {
+      "count": 1,
+      "actual_churn_rate": 100.0
+    },
+    "Medium": {
+      "count": 88,
+      "actual_churn_rate": 34.090909090909086
+    },
+    "Low": {
+      "count": 411,
+      "actual_churn_rate": 19.22141119221411
+    }
+  },
+  "industry_analysis": {
+    "avg_churn_prob": {
+      "HealthTech": 0.2324016367712001,
+      "DevTools": 0.22959979623677243,
+      "FinTech": 0.21982934370535553,
+      "EdTech": 0.2184778672059813,
+      "Cybersecurity": 0.21501135826441828
+    },
+    "count": {
+      "HealthTech": 96,
+      "DevTools": 113,
+      "FinTech": 112,
+      "EdTech": 79,
+      "Cybersecurity": 100
+    }
+  },
+  "plan_tier_analysis": {
+    "avg_churn_prob": {
+      "Basic": 0.23676635305032773,
+      "Enterprise": 0.22090035050847937,
+      "Pro": 0.2125938575547404
+    },
+    "count": {
+      "Basic": 168,
+      "Enterprise": 154,
+      "Pro": 178
+    }
+  },
+  "top_high_risk_customers": [
+    {
+      "account_id": "A-b30291",
+      "account_name": "Company_344",
+      "industry": "HealthTech",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.7571506200844774,
+      "churn_risk_level": "High",
+      "actual_churn": 1
+    },
+    {
+      "account_id": "A-3ce5b8",
+      "account_name": "Company_256",
+      "industry": "FinTech",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.593023861309521,
+      "churn_risk_level": "Medium",
+      "actual_churn": 1
+    },
+    {
+      "account_id": "A-6dee43",
+      "account_name": "Company_478",
+      "industry": "FinTech",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.5519578928519416,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-d922bf",
+      "account_name": "Company_221",
+      "industry": "HealthTech",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.5162681340312961,
+      "churn_risk_level": "Medium",
+      "actual_churn": 1
+    },
+    {
+      "account_id": "A-7f29a7",
+      "account_name": "Company_386",
+      "industry": "Cybersecurity",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.502757701676435,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-9ee962",
+      "account_name": "Company_59",
+      "industry": "HealthTech",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.4998645688761582,
+      "churn_risk_level": "Medium",
+      "actual_churn": 1
+    },
+    {
+      "account_id": "A-b2225d",
+      "account_name": "Company_50",
+      "industry": "FinTech",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.4854852971055002,
+      "churn_risk_level": "Medium",
+      "actual_churn": 1
+    },
+    {
+      "account_id": "A-32fb14",
+      "account_name": "Company_25",
+      "industry": "DevTools",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.47096364504572075,
+      "churn_risk_level": "Medium",
+      "actual_churn": 1
+    },
+    {
+      "account_id": "A-6c093d",
+      "account_name": "Company_12",
+      "industry": "DevTools",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.4653227495853129,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-df10db",
+      "account_name": "Company_143",
+      "industry": "DevTools",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.46274949558936046,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-794a0b",
+      "account_name": "Company_168",
+      "industry": "HealthTech",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.4583413223573642,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-9289f6",
+      "account_name": "Company_104",
+      "industry": "EdTech",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.442035416138566,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-0a282f",
+      "account_name": "Company_2",
+      "industry": "DevTools",
+      "plan_tier": "Basic",
+      "predicted_churn_probability": 0.4409645895102402,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-7c4956",
+      "account_name": "Company_254",
+      "industry": "DevTools",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.43733814062691145,
+      "churn_risk_level": "Medium",
+      "actual_churn": 1
+    },
+    {
+      "account_id": "A-ac14bb",
+      "account_name": "Company_15",
+      "industry": "FinTech",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.4340889624061241,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-a7bd4b",
+      "account_name": "Company_363",
+      "industry": "Cybersecurity",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.43224486800151346,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-67be94",
+      "account_name": "Company_276",
+      "industry": "EdTech",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.42889033593394255,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-3b37d9",
+      "account_name": "Company_384",
+      "industry": "FinTech",
+      "plan_tier": "Enterprise",
+      "predicted_churn_probability": 0.42476803282369097,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-e6afc1",
+      "account_name": "Company_346",
+      "industry": "DevTools",
+      "plan_tier": "Pro",
+      "predicted_churn_probability": 0.4169226870425077,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    },
+    {
+      "account_id": "A-922109",
+      "account_name": "Company_243",
+      "industry": "Cybersecurity",
+      "plan_tier": "Pro",
+      "predicted_churn_probability": 0.4135634452461405,
+      "churn_risk_level": "Medium",
+      "actual_churn": 0
+    }
+  ],
+  "data_shape": {
+    "train_samples": 400,
+    "test_samples": 100,
+    "num_features": 40,
+    "train_churn_count": 88,
+    "test_churn_count": 22
+  }
+}
