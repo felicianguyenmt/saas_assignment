@@ -57,10 +57,10 @@ saaa_assignment/
 │   ├── requirements.txt             # Danh sách thư viện cần thiết
 │   ├── analysis_results.json        # Kết quả phân tích (auto-generated)
 │   └── README.md                    # File này
-├── notebooks/                       # Thư mục chứa hình ảnh/visualization
-│   ├── Figure_1.png                 # Biểu đồ phân tích
-│   ├── Figure_2.png                 # Biểu đồ phân tích
-│   └── Figure_3.png                 # Biểu đồ phân tích
+├── notebooks/                       # Thư mục chứa visualizations
+│   ├── Figure_1.png                 # Model Performance Comparison
+│   ├── Figure_2.png                 # Feature Importance Analysis
+│   └── Figure_3.png                 # Risk Segmentation Charts
 └── reports/                         # Thư mục chứa báo cáo
     └── Báo cáo Môn Học máy_Phân Tích và Dự Đoán Churn Khách Hàng.pdf
 ```
@@ -166,9 +166,24 @@ Sau khi chạy, bạn sẽ thấy:
 - 3 biểu đồ hiển thị trên màn hình (hoặc lưu trong thư mục notebooks/)
 - In ra console: Model performance metrics và top high-risk customers
 
-## 📊 Outputs
+## 📊 Outputs và Kết Quả
 
-### 1. analysis_results.json (10KB)
+### 1. Jupyter Notebook (Google Colab) 📓
+**Link**: [https://colab.research.google.com/drive/1s0nkWXOEhT3G00c8OQJ18iXZly6v0kKF?usp=sharing](https://colab.research.google.com/drive/1s0nkWXOEhT3G00c8OQJ18iXZly6v0kKF?usp=sharing)
+
+Notebook tương tác bao gồm:
+- 📊 Code phân tích đầy đủ
+- 📈 Visualizations tương tác
+- 📝 Giải thích chi tiết từng bước
+- 🎯 Kết quả và insights
+
+### 2. Visualizations (Biểu Đồ) 🎨
+Lưu trong thư mục `notebooks/`:
+- **Figure_1.png**: Model Performance Comparison
+- **Figure_2.png**: Feature Importance Analysis  
+- **Figure_3.png**: Risk Segmentation Charts
+
+### 3. analysis_results.json 📋
 File JSON chứa tất cả kết quả phân tích:
 - Model performance metrics
 - Confusion matrices
@@ -176,30 +191,15 @@ File JSON chứa tất cả kết quả phân tích:
 - Risk segmentation
 - Top high-risk customers
 
-### 2. BAO_CAO_PHAN_TICH_CHURN.md (26KB) ⭐
-Báo cáo chi tiết bằng tiếng Việt (Markdown) bao gồm:
-- ✅ Tổng quan dự án
-- ✅ EDA (Exploratory Data Analysis)
-- ✅ Pipeline design
-- ✅ Các thí nghiệm đã thực hiện
-- ✅ So sánh kết quả 3 models
-- ✅ Phân tích feature importance
-- ✅ Churn risk segmentation
-- ✅ Khuyến nghị hành động
-- ✅ Roadmap cải tiến
+### 4. Báo Cáo PDF 📄
+Báo cáo học thuật đầy đủ bằng tiếng Việt:
+- Tổng quan về bài toán Churn Prediction
+- Phân tích khám phá dữ liệu (EDA)
+- Thiết kế và triển khai các mô hình ML
+- Đánh giá và so sánh kết quả
+- Kết luận và hướng phát triển
 
-### 3. BAO_CAO_PHAN_TICH_CHURN.docx (48KB) 📄
-Báo cáo Word format - Sẵn sàng để:
-- 📥 Tải về
-- ✏️ Chỉnh sửa
-- 📧 Gửi email
-- 🖨️ In ấn
-- 📑 Export sang PDF
-
-**Tạo file Word:**
-```bash
-python3 convert_to_word.py
-```
+**Location**: `reports/Báo cáo Môn Học máy_Phân Tích và Dự Đoán Churn Khách Hàng trong Doanh Nghiệp SaaS bằng Machine Learning.pdf`
 
 ## 📈 Model Performance
 
@@ -290,11 +290,62 @@ Báo cáo bao gồm:
 
 💻 **GitHub Repository**: [https://github.com/felicianguyenmt/saas_assignment](https://github.com/felicianguyenmt/saas_assignment)
 
+## 📊 Notebooks và Visualizations
+
+### Jupyter Notebook (Google Colab)
+
+Dự án bao gồm một Jupyter Notebook hoàn chỉnh có thể chạy trực tiếp trên Google Colab:
+
+🔗 **[Mở Notebook trên Colab](https://colab.research.google.com/drive/1s0nkWXOEhT3G00c8OQJ18iXZly6v0kKF?usp=sharing)**
+
+**Notebook bao gồm**:
+- 📊 Exploratory Data Analysis (EDA) với visualizations
+- 🔧 Data Preprocessing và Feature Engineering
+- 🤖 Training 3 Machine Learning models
+- 📈 Model Evaluation và Comparison
+- 🎯 Risk Segmentation và Predictions
+- 💡 Insights và Recommendations
+
+**Cách sử dụng**:
+1. Click vào link Colab ở trên
+2. Chọn "Copy to Drive" để tạo bản sao của bạn
+3. Chạy từng cell bằng cách nhấn `Shift + Enter`
+4. Hoặc chạy tất cả: `Runtime > Run all`
+
+### Visualizations (Biểu Đồ)
+
+Các biểu đồ phân tích được lưu trong thư mục `notebooks/`:
+
+**Figure_1.png** - Model Performance Comparison
+- So sánh AUC-ROC của 3 models
+- Confusion matrices
+- Performance metrics comparison
+
+**Figure_2.png** - Feature Importance Analysis  
+- Top features theo Random Forest
+- Top features theo Gradient Boosting
+- Feature importance comparison
+
+**Figure_3.png** - Risk Segmentation
+- Phân bổ khách hàng theo risk levels
+- Actual churn rate by risk group
+- High-risk customer identification
+
+### Chạy Local để Tạo Visualizations
+
+```bash
+# Chạy script để tạo biểu đồ
+python3 saas.py
+
+# Biểu đồ sẽ hiển thị tự động và lưu vào notebooks/
+```
+
 ## 📖 Hướng Dẫn Xem Báo Cáo
 
-1. **Báo cáo PDF**: Mở file trong thư mục `reports/`
-2. **Kết quả phân tích**: Xem file `analysis_results.json` để xem raw data
-3. **Visualizations**: Các biểu đồ được lưu trong thư mục `notebooks/`
+1. **Jupyter Notebook**: Chạy trên [Google Colab](https://colab.research.google.com/drive/1s0nkWXOEhT3G00c8OQJ18iXZly6v0kKF?usp=sharing)
+2. **Báo cáo PDF**: Mở file trong thư mục `reports/`
+3. **Kết quả phân tích**: Xem file `analysis_results.json` để xem raw data
+4. **Visualizations**: Xem các file `.png` trong thư mục `notebooks/`
 
 ## 👥 Lộ Trình Phát Triển
 
