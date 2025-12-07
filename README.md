@@ -269,7 +269,7 @@ graph LR
 
 ### Báo Cáo PDF
 
-📥 **Download báo cáo đầy đủ**: [Báo cáo Môn Học máy - Phân Tích và Dự Đoán Churn Khách Hàng](../reports/Báo%20cáo%20Môn%20Học%20máy_Phân%20Tích%20và%20Dự%20Đoán%20Churn%20Khách%20Hàng%20trong%20Doanh%20Nghiệp%20SaaS%20bằng%20Machine%20Learning.pdf)
+📥 **Download báo cáo đầy đủ**: [Báo cáo Môn Học máy - Phân Tích và Dự Đoán Churn Khách Hàng](https://github.com/felicianguyenmt/saas_assignment/blob/main/reports/B%C3%A1o%20c%C3%A1o%20M%C3%B4n%20H%E1%BB%8Dc%20m%C3%A1y_Ph%C3%A2n%20T%C3%ADch%20v%C3%A0%20D%E1%BB%B1%20%C4%90o%C3%A1n%20Churn%20Kh%C3%A1ch%20H%C3%A0ng%20trong%20Doanh%20Nghi%E1%BB%87p%20SaaS%20b%E1%BA%B1ng%20Machine%20Learning.pdf)
 
 Báo cáo bao gồm:
 - Tổng quan về bài toán Churn Prediction
