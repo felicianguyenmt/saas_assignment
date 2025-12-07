@@ -15,10 +15,10 @@
 
 ## 👥 Thành Viên Nhóm
 
-| STT | Họ và Tên | Mã Số Sinh Viên |
-|-----|-----------|-----------------|
-| 1   | Phan Thị Thuỳ Anh | 2433103 |
-| 2   | Nguyễn Thị Hồng Phúc | 2433190 |
+| STT | Họ và Tên | Mã Số Sinh Viên | Email |
+|-----|-----------|-----------------|-------|
+| 1   | Phan Thị Thuỳ Anh | 2433103 | anh.phantt@hcmut.edu.vn |
+| 2   | Nguyễn Thị Hồng Phúc | 2433190 | phuc.nguyenthihong@hcmut.edu.vn |
 
 ## 🎯 Mục Tiêu Bài Tập Lớn
 
@@ -51,13 +51,14 @@ Project này xây dựng và so sánh 3 mô hình Machine Learning để dự đ
 ## 📂 Cấu Trúc Thư Mục Dự Án
 
 ```
-saaa_assignment/
+saas_assignment/
+├── README.md                        # File tài liệu hướng dẫn (bạn đang đọc file này)
 ├── modules/                         # Thư mục chứa code và kết quả
 │   ├── saas.py                      # Script phân tích chính
 │   ├── requirements.txt             # Danh sách thư viện cần thiết
-│   ├── analysis_results.json        # Kết quả phân tích (auto-generated)
-│   └── README.md                    # File này
-├── notebooks/                       # Thư mục chứa visualizations
+│   └── analysis_results.json        # Kết quả phân tích (auto-generated)
+├── notebooks/                       # Thư mục chứa notebook và visualizations
+│   ├── Học_máy_Assignment.ipynb     # Jupyter Notebook chính
 │   ├── Figure_1.png                 # Model Performance Comparison
 │   ├── Figure_2.png                 # Feature Importance Analysis
 │   └── Figure_3.png                 # Risk Segmentation Charts
@@ -372,7 +373,9 @@ python3 saas.py
 
 Nếu có thắc mắc hoặc cần hỗ trợ, vui lòng liên hệ qua:
 - **GitHub Issues**: [https://github.com/felicianguyenmt/saas_assignment/issues](https://github.com/felicianguyenmt/saas_assignment/issues)
-- **Email**: Liên hệ qua GitHub repository
+- **Email**: 
+  - Phan Thị Thuỳ Anh: anh.phantt@hcmut.edu.vn
+  - Nguyễn Thị Hồng Phúc: phuc.nguyenthihong@hcmut.edu.vn
 
 ## 🤝 Đóng Góp
 
